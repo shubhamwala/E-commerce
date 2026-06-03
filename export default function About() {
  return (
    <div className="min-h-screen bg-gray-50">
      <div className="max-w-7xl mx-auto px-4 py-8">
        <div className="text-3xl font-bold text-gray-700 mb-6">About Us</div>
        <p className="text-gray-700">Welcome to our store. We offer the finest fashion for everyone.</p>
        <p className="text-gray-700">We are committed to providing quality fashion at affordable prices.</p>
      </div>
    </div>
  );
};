@@ -1,0 +1,15 @@
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+
+export default function AboutPage() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-3xl font-bold text-gray-700 mb-6">About Us</div>
+        <p className="text-gray-700">Welcome to our store. We offer the finest fashion for everyone.</p>
+        <p className="text-gray-700">Our journey started in 2020.</p>
+        <p className="text-gray-700">We are committed to providing quality fashion at affordable prices.</p>
+      </div>
+    </div>
+  );
+};

@@ -1,0 +1,170 @@
+
+> zudio-fashion-store@0.1.0 build
+> next build
+
+▲ Next.js 16.2.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 9 errors:
+./src/components/ProductCard.tsx:1:39
+Expected ';', '}' or <eof>
+[31m[1m>[0m [90m1 |[0m [32m'import { useState, useEffect } from '[0mreact[32m';[0m
+  [90m  |[0m                                       [31m[1m^^^^^[0m
+  [90m2 |[0m [32mimport { useCartStore } from '[0m@/store/cartStore[32m';[0m
+  [90m3 |[0m [32mimport { Heart } from '[0mlucide-react[32m';[0m
+  [90m4 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/ProductCard.tsx
+    ./src/app/products/page.tsx
+
+
+./src/components/layout/Navbar.tsx:159:16
+Expected '</', got 'jsx text'
+  [90m157 |[0m             </div>
+  [90m158 |[0m           </div>
+[31m[1m>[0m [90m159 |[0m         </main>
+  [90m    |[0m                [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m160 |[0m       </main>
+  [90m    |[0m [31m[1m^^^^^^[0m
+  [90m161 |[0m     </div>
+  [90m162 |[0m   );
+  [90m163 |[0m };
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Navbar.tsx
+    ./src/app/products/page.tsx
+
+
+./src/app/page.tsx:27:11
+Expression expected
+  [90m25 |[0m               <div className=[32m"bg-gray-100 rounded-lg p-6"[0m>
+  [90m26 |[0m                 <h3 className=[32m"text-xl font-semibold mb-2"[0m>[33mNew[0m [33mArrivals[0m</h3>
+[31m[1m>[0m [90m27 |[0m          <|fim_suffix|>  <div className=[32m"bg-gray-100 rounded-lg p-6"[0m>
+  [90m   |[0m           [31m[1m^[0m
+  [90m28 |[0m                 <h3 className=[32m"text-xl font-semibold mb-2"[0m>[33mAccessories[0m</h3>
+  [90m29 |[0m                 <p className=[32m"text-gray-600"[0m>[33mComplete[0m your look [36mwith[0m our accessories</p>
+  [90m30 |[0m               </div>
+
+Parsing ecmascript source code failed
+
+
+./src/app/page.tsx:27:23
+Expression expected
+  [90m25 |[0m               <div className=[32m"bg-gray-100 rounded-lg p-6"[0m>
+  [90m26 |[0m                 <h3 className=[32m"text-xl font-semibold mb-2"[0m>[33mNew[0m [33mArrivals[0m</h3>
+[31m[1m>[0m [90m27 |[0m          <|fim_suffix|>  <div className=[32m"bg-gray-100 rounded-lg p-6"[0m>
+  [90m   |[0m                       [31m[1m^[0m
+  [90m28 |[0m                 <h3 className=[32m"text-xl font-semibold mb-2"[0m>[33mAccessories[0m</h3>
+  [90m29 |[0m                 <p className=[32m"text-gray-600"[0m>[33mComplete[0m your look [36mwith[0m our accessories</p>
+  [90m30 |[0m               </div>
+
+Parsing ecmascript source code failed
+
+
+./src/app/page.tsx:31:14
+Unterminated regexp literal
+  [90m29 |[0m                 <p className=[32m"text-gray-600"[0m>[33mComplete[0m your look [36mwith[0m our accessories</p>
+  [90m30 |[0m               </div>
+[31m[1m>[0m [90m31 |[0m             </div>
+  [90m   |[0m              [31m[1m^^^^^[0m
+  [90m32 |[0m           </div>
+  [90m33 |[0m         </section>
+  [90m34 |[0m
+
+Parsing ecmascript source code failed
+
+
+./src/components/layout/Footer.tsx:2:1
+Export Facebook doesn't exist in target module
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { [33mFacebook[0m, [33mTwitter[0m, [33mInstagram[0m, [33mYoutube[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mFooter[0m = () => {
+  [90m5 |[0m   [36mreturn[0m (
+
+The export Facebook was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Webhook?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Footer.tsx
+    ./src/app/products/page.tsx
+
+
+./src/components/layout/Footer.tsx:2:1
+Export Instagram doesn't exist in target module
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { [33mFacebook[0m, [33mTwitter[0m, [33mInstagram[0m, [33mYoutube[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mFooter[0m = () => {
+  [90m5 |[0m   [36mreturn[0m (
+
+The export Instagram was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Star?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Footer.tsx
+    ./src/app/products/page.tsx
+
+
+./src/components/layout/Footer.tsx:2:1
+Export Twitter doesn't exist in target module
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { [33mFacebook[0m, [33mTwitter[0m, [33mInstagram[0m, [33mYoutube[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mFooter[0m = () => {
+  [90m5 |[0m   [36mreturn[0m (
+
+The export Twitter was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Timer?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Footer.tsx
+    ./src/app/products/page.tsx
+
+
+./src/components/layout/Footer.tsx:2:1
+Export Youtube doesn't exist in target module
+  [90m1 |[0m [36mimport[0m [33mLink[0m [36mfrom[0m [32m'next/link'[0m;
+[31m[1m>[0m [90m2 |[0m [36mimport[0m { [33mFacebook[0m, [33mTwitter[0m, [33mInstagram[0m, [33mYoutube[0m } [36mfrom[0m [32m'lucide-react'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m [36mconst[0m [33mFooter[0m = () => {
+  [90m5 |[0m   [36mreturn[0m (
+
+The export Youtube was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.mjs [app-rsc] (ecmascript).
+Did you mean to import Route?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./src/components/layout/Footer.tsx
+    ./src/app/products/page.tsx
+
+
+    at <unknown> (./src/components/ProductCard.tsx:1:39)
+    at <unknown> (./src/components/layout/Navbar.tsx:159:16)
+    at <unknown> (./src/app/page.tsx:27:11)
+    at <unknown> (./src/app/page.tsx:27:23)
+    at <unknown> (./src/app/page.tsx:31:14)
+    at <unknown> (./src/components/layout/Footer.tsx:2:1)
+    at <unknown> (./src/components/layout/Footer.tsx:2:1)
+    at <unknown> (./src/components/layout/Footer.tsx:2:1)
+    at <unknown> (./src/components/layout/Footer.tsx:2:1)
